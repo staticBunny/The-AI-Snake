@@ -1,4 +1,4 @@
-#include "fruit.cpp"
+#include "fruit.h"
 #include <vector>
 
 class Snake
@@ -9,7 +9,6 @@ class Snake
         Snake(int x, int y);
         void move(string direction);
         void grow();
-        //void die(){dead = true;}
         void die();
         bool checkDead(){return dead;}
         vector<Block*> getBody(){return body;}

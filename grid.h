@@ -1,4 +1,4 @@
-#include "snake.cpp"
+#include "snake.h"
 #include <queue>
 
 #define WINDOW_SIZE 1000   

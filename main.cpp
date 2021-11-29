@@ -1,4 +1,4 @@
-#include "grid.cpp"
+#include "grid.h"
 
 #define REFRESH_RATE 0.1
 
