@@ -1,6 +1,6 @@
 # The-AI-Snake
 
-The AI Snake is similar to the classic Snake game, where the objective is to eat as many fruits as possible. The game can either be played by a human, who can control the snake by using the arrow keys, or by an AI, which will try to find the best path from the snake to the fruit. 
+The AI Snake is similar to the classic Snake game, where the objective is to eat as many fruits as possible. The game can either be played by a human, who can set any arbitrary path for the snake, or by an AI, which will try to find the best path from the snake to the fruit. 
 
 
 ### Header files
@@ -21,4 +21,4 @@ The AI Snake is similar to the classic Snake game, where the objective is to eat
 ---
 ### Main
 
-The main.cpp file contains the main function that runs the game. Note that to run the game you need to enter a command line argument. If the argument enetered is "AI", then the game will run in AI mode, i.e., the AI agent would be controlling the snake's movement. Otherwise, the game will run in normal mode, where the user controls the snake.
+The main.cpp file contains the main function that runs the game. Note that to run the game you need to enter a command line argument. If the argument enetered is "AI", then the game will run in AI mode, i.e., the AI agent would be controlling the snake's movement. Otherwise, the game will run in normal mode, where the user controls the snake. When in normal mode, use the arrow keys to control the snake.
