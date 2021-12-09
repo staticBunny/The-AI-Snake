@@ -69,7 +69,7 @@ bool Grid::is_snake(Point *p)
 
 bool Grid::is_wall(Point *p)
 {
-    if (p->x < 0 || p->x >= WINDOW_SIZE / BLOCK_SIZE || p->y < 0 || p->y >= WINDOW_SIZE / BLOCK_SIZE)
+    if (p->x < 0 || p->x >= GRID_SIZE || p->y < 0 || p->y >= GRID_SIZE)
     {
         return true;
     }
