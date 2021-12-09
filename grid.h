@@ -279,7 +279,6 @@ void Grid::set_ai_path()
     }
 }
 
-
 void Grid::update(string game_mode)
 {
     if (!snake->checkDead())
