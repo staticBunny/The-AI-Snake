@@ -16,7 +16,7 @@ snake.h - contains the Snake class. A snake object is placed on the screen and u
 
 grid.h - contains the Grid class. Grid is the main class that contains the game logic. It initializes a game window, and implements all necessay functions to run the game. Note that the AI agent is implemented in this class.
 
-Point.h - contains the Point class. This class is used to store the x and y coordinates of a block (mainly used by the AI agent). 
+point.h - contains the Point class. This class is used to store the x and y coordinates of a block (mainly used by the AI agent). 
 
 ---
 ### Main
