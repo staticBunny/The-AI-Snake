@@ -51,7 +51,7 @@ void Snake::grow()
 {
     int x = body.back()->getX();
     int y = body.back()->getY();
-    Block *newBlock = new Block(x-1, y);
+    Block *newBlock = new Block(x, y);
     body.push_back(newBlock);
 }
 
