@@ -6,8 +6,8 @@ using namespace std;
 class Fruit : public Block
 {
     public:
-        Fruit(int x, int y);
-        void update();
+        Fruit(int x, int y); // Initializes a new Block object to (x,y) and changes Block color.
+        void update(); // Moves the Block to a random location on the screen.
 };
 
 Fruit::Fruit(int x, int y) : Block(x, y)
@@ -17,8 +17,8 @@ Fruit::Fruit(int x, int y) : Block(x, y)
 
 void Fruit::update()
 {
-    int x = (rand() % 20);
-    int y = (rand() % 20);
+    int x = (rand() % GRID_SIZE);
+    int y = (rand() % GRID_SIZE);
     move(x, y);
 }
 

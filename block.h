@@ -1,19 +1,12 @@
-#include <FL/Fl.H>
-#include <FL/Fl_Window.H>
-#include <FL/Fl_Box.H>
-#include <iostream>
-
-#define BLOCK_SIZE 50
-
-using namespace std;
+#include "imports.h"
 
 class Block : public Fl_Box
 {
     public:
-        Block(int x, int y);
-        void move(int x, int y);
-        int getX();
-        int getY();
+        Block(int x, int y); //Initialises an Fl_Box object by setting appropiate size, shape and color.
+        void move(int x, int y); //Moves the Fl_Box to a new point (x,y).
+        int getX(); //Returns the x coordinate of the Fl_Box.
+        int getY(); //Returns the y coordinate of the Fl_Box.
 };
 
 Block::Block(int x, int y) : Fl_Box(x*BLOCK_SIZE, y*BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE)

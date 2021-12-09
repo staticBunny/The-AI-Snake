@@ -1,17 +1,16 @@
 #include "fruit.h"
-#include <vector>
 
 class Snake
 {
-    vector<Block*> body;
-    bool dead;
+    vector<Block*> body; // Stores all Block objects part of the snake.
+    bool dead; // Stores whether the snake is dead or not.
     public:
-        Snake(int x, int y);
-        void move(string direction);
-        void grow();
-        void die();
-        bool checkDead(){return dead;}
-        vector<Block*> getBody(){return body;}
+        Snake(int x, int y); // Initializes all private data members.
+        void move(string direction); // Moves the snake one step in the given direction.
+        void grow(); // Adds a new Block to the snake's tail.
+        void die(); // Sets the snake's dead status to true.
+        bool checkDead(){return dead;} // Returns the snake's dead status.
+        vector<Block*> getBody(){return body;} // Returns the snake's body.
 };
 
 Snake::Snake(int x, int y)
